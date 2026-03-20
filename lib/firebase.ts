@@ -1,22 +1,19 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
+import { initializeApp, getApps } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyAvR99mNOcF0TzybC27qLiXk2pTL3hIF4I",
-  authDomain: "smart-finance-navigator.firebaseapp.com",
-  projectId: "smart-finance-navigator",
-  storageBucket: "smart-finance-navigator.firebasestorage.app",
-  messagingSenderId: "463037530241",
-  appId: "1:463037530241:web:2cc2ea99d7ec0589638d80",
-  measurementId: "G-6H5SQT7NP6"
+  apiKey:            process.env.NEXT_PUBLIC_FIREBASE_API_KEY!,
+  authDomain:        process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN!,
+  projectId:         process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID!,
+  storageBucket:     process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET!,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID!,
+  appId:             process.env.NEXT_PUBLIC_FIREBASE_APP_ID!,
 };
 
-export const app = initializeApp(firebaseConfig);
+// Prevent duplicate initialization in Next.js HMR / SSR
+const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
+
 export const auth = getAuth(app);
-export const db = getFirestore(app)
+export const db   = getFirestore(app);
+export default app;
