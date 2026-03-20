@@ -1,0 +1,28 @@
+    {
+  "Logger": {
+    "title": "Lembetsani Zochitika",
+    "category": "Gulu",
+    "amount": "Ndonde (K)",
+    "reference": "Mndandanda",
+    "type": "Mtundu",
+    "receipt": "Lemkeni Receipt",
+    "scan": "Santhula Receipt",
+    "log": "Lembetsani",
+    "expense": "Kugwiritsa Ntchito",
+    "income": "Kulandira",
+    "food": "Zakudya",
+    "fuel": "Mafuta",
+    "utilities": "Zothandizila",
+    "household": "M'nyumba"
+  },
+  "Nav": {
+    "dashboard": "Dashboard",
+    "log": "Lembani Zowonongeka",
+    "advisor": "Mlangizi",
+    "alerts": "Chenjezo Lamitengo",
+    "admin": "Admin",
+    "login": "Lowani",
+    "register": "Lembetsani",
+    "logout": "Tulukani"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "Logger": {
+    "title": "Log Transaction",
+    "category": "Category",
+    "amount": "Amount (K)",
+    "reference": "Reference",
+    "type": "Type",
+    "receipt": "Upload Receipt",
+    "scan": "Scan Receipt",
+    "log": "Log Transaction",
+    "expense": "Expense",
+    "income": "Income",
+    "food": "Food",
+    "fuel": "Fuel",
+    "utilities": "Utilities",
+    "household": "Household"
+  },
+  "Nav": {
+    "dashboard": "Dashboard",
+    "log": "Log Expense",
+    "advisor": "Advisor",
+    "alerts": "Price Alerts",
+    "admin": "Admin",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  }
+}
